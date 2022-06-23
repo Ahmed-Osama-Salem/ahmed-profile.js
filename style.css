@@ -1302,6 +1302,25 @@ textarea {
     height: 650px;
   }
 
+  .my-img::before {
+    content: "";
+    position: absolute;
+    inset: -10px 91px;
+    background: linear-gradient(315deg, #00ccff, #d400d4, #D50707, #F6E825);
+    transition: 0.5s;
+    animation: colorrot 4s infinite linear;
+    filter: blur(20px);
+}
+
+.my-img::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    background: #171212;
+    border-radius: 50%;
+    z-index: 1;
+}
+
   .border h2 {
     font-size: 3rem;
   }
