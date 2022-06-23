@@ -167,6 +167,8 @@ nav ul li a:hover::after {
   position: relative;
   background: #171212;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
   overflow: hidden;
   animation: imgone 2s;
   transition: 0.5s ease-in-out;
@@ -198,6 +200,7 @@ nav ul li a:hover::after {
   transition: 0.5s;
   animation: colorrot 4s infinite linear;
   filter: blur(20px);
+
 }
 
 .my-img:hover::before {
