@@ -1305,11 +1305,28 @@ textarea {
   }
 
   .my-img {
-    width: 650px;
-    height: 650px;
+    width: 700px;
+    height: 700px;
+    position: relative;
+    background: #171212;
+    overflow: hidden;
     -webkit-border-radius: 50%;
     -ms-border-radius: 50%;
+    animation: imgone 2s;
+    transition: 0.5s ease-in-out;
+    opacity: 1;
   }
+@keyframes imgone {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+}
 
   .my-img::before {
     content: "";
