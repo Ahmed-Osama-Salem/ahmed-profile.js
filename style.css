@@ -224,6 +224,8 @@ nav ul li a:hover::after {
   background: #171212;
   border-radius: 50%;
   z-index: 1;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
 }
 
 .border {
@@ -232,6 +234,8 @@ nav ul li a:hover::after {
   border: 2px solid #171212;
   z-index: 3;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -1303,6 +1307,8 @@ textarea {
   .my-img {
     width: 650px;
     height: 650px;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
   }
 
   .my-img::before {
@@ -1321,6 +1327,8 @@ textarea {
     inset: 5px;
     background: #171212;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
     z-index: 1;
 }
 
@@ -1894,6 +1902,12 @@ textarea {
 
 .first-sec .sp-1{
   font-size: 3.5rem;
+}
+
+.border {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
 }
 
 }
