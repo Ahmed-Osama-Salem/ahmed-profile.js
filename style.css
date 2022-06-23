@@ -107,7 +107,7 @@ nav ul li a:hover::after {
   display: none;
 }
 
-.bl {
+/*****.bl {
   filter: blur(5px);
   filter: contrast(20px);
 }
