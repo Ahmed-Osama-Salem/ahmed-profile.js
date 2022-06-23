@@ -1336,6 +1336,7 @@ textarea {
     transition: 0.5s;
     animation: colorrot 4s infinite linear;
     filter: blur(15px);
+    overflow: hidden;
 }
 
 .my-img::after {
