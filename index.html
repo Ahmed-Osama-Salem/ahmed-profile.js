@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!--<meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+  <title>Ahmed osama - Profile</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+  <!-- favicon-icons-links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- fontawesome-dns -->
+  <script src="https://kit.fontawesome.com/2298cdf080.js" crossorigin="anonymous"></script>
+  <!-- google-fonts-dns -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fascinate&family=Indie+Flower&family=Josefin+Sans&family=Lobster&family=Play&family=Poppins&family=Righteous&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="head" id="app">
+    <nav id="menu">
+      <ul>
+        <li><a onclick="closeMenu()">home</a></li>
+        <li><a href="#translate-con">about</a></li>
+        <li><a href="#skills-nav">skills</a></li>
+        <li><a href="#projects">porjects</a></li>
+        <li><a href="#footer">contact</a></li>
+      </ul>
+      <div class="logo-copy">
+        <img src="imgs/mylogo.png" class="logo1" alt="">
+      </div>
+      <img src="imgs/cross.png" alt="" class="close-icon" onclick="closeMenu()">
+    </nav>
+    <img src="imgs/nav1.png" alt="" class="open-icon" onclick="openMenu()">
+    <button type="button" name="button" id="modes-btn" class="light-mode">light mode</button>
+
+    <section class="first-sec" id="sec1">
+      <div id="header-text" class="show-h1">
+        <h1 id="head-text"><span class="sp-1">
+            < h1>
+          </span><br><span id="typed">Welcome to my profile </span><br> <span class="sp-1">
+            < /h1>
+          </span></h1>
+      </div>
+
+      <div id="ahmed-profile" class="my-img">
+        <div id="profile-img" class="border">
+          <img src="imgs/my-prooo.jpg" alt="">
+          <h2>Ahmed osama salem <br><span>Front-End developer</span></h2>
+          <button type="button" name="button" class="btn-contact"><a href="#footer">Contact me</a></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="second-sec">
+      <div id="translate-con" class="hide">
+        <h2><span class="sp-2">
+            < h2>
+          </span><br>About<br> <span class="sp-2">
+            < /h2>
+          </span></h2>
+      </div>
+      <span class="sp-3">
+        < p>
+      </span>
+      <div class="my-img2" id="show-scroll">
+        <p>My name is Ahmed osama salem , Bachelor's degree in Civil Engineering
+          from 2019 and I finished my military service in 2021, I worked as a site engineer for 6 months and
+          <span>I finally gave up and started programming </span> and Focused on developing front-end websites
+          with studies of <span>HTML , CSS and JavaScript fundamentals with ES6 knowledge and OOP </span>
+          I love programming with all of my heart, I love create's something Different and special
+          <span>with line of code you can change the world !!</span> I always strive to develop myself in programming in general,
+          not only in the web field , And always know that knowledge does not end.
+
+        </p>
+      </div>
+      <span class="sp-3">
+        < /p>
+      </span>
+    </section>
+
+    <section id="skills-nav" class="third-sec">
+      <div id="translate-con2" class="hide">
+        <h2 id="skill-txt"><span class="sp-2">
+            < h2>
+          </span><br>Skills<br> <span class="sp-2">
+            < /h2>
+          </span></h2>
+      </div>
+      <div class="container-skills">
+        <div id="bar-1" class="skills-box hide-box">
+          <div class="skill-name">
+            html5
+            <div class="skill-bar">
+              <div id="pro-1" class="skill-progress" per="90%" style="max-width:90%">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="bar-2" class="skills-box">
+          <div class="skill-name">
+            css
+            <div class="skill-bar">
+              <div id="pro-2" class="skill-progress" per="80%" style="max-width:80%">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="bar-3" class="skills-box">
+          <div class="skill-name">
+            JavaScript
+            <div class="skill-bar">
+              <div id="pro-3" class="skill-progress" per="80%" style="max-width:80%">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="bar-4" class="skills-box">
+          <div class="skill-name">
+            bootstrap 5
+            <div class="skill-bar">
+              <div id="pro-4" class="skill-progress" per="90%" style="max-width:90%">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="bar-5" class="skills-box">
+          <div class="skill-name">
+            jquery
+            <div class="skill-bar">
+              <div id="pro-5" class="skill-progress" per="70%" style="max-width:70%">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="bar-6" class="skills-box">
+          <div class="skill-name">
+            vue.js
+            <div class="skill-bar">
+              <div id="pro-6" class="skill-progress" per="65%" style="max-width:65%">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="forth-sec">
+      <div class="container-2">
+        <div id="scene" class="parallax-icon">
+          <div data-depth="0.6" class="layer">
+            <h1 class="ml6"><span class="text-wrapper" id="front-end-text"><span class="letters">be aswsome be a front-end developer</span></span></h1>
+          </div>
+          <div data-depth="0.1" class="layer"><img src="imgs/clouds.png" class="background1" alt=""></div>
+          <div data-depth="0.3" class="layer"><img src="imgs/clouds-2.png" class="background2" alt=""></div>
+          <div data-depth-y="0.6" class="layer"><img src="imgs/html-logo.png" class="my-logo1" alt=""></div>
+          <div data-depth="0.4" class="layer"><img src="imgs/css-logo.png" class="my-logo2" alt=""></div>
+          <div data-depth-y="0.6" class="layer"><img src="imgs/js-logo.png" class="my-logo3" alt=""></div>
+          <div data-depth="0.4" class="layer"><img src="imgs/vue-logo.png" class="my-logo4" alt=""></div>
+          <div data-depth-x="0.7" class="layer"><img src="imgs/bootstrap-logo.png" class="my-logo5" alt=""></div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="fivth-sec">
+      <h2><span class="sp-2">
+          < h2>
+        </span><br>projects<br> <span class="sp-2">
+          < /h2>
+        </span></h2>
+      <div class="container-page">
+
+        <div id="pro-1-content">
+          <h3>el-fit group</h3>
+          <p>its a company of general contracting and Engineering training ,
+            its not my first project but i can say its my first real project.
+            with this project i learn and practil on creating full-responsive-website
+          </p>
+          <span>tools</span>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>bootstrap</li>
+          </ul>
+          <button id="btn-src" type="button" name="button" class="git-btn">Veiw source code</button>
+          <button id="btn-web" type="button" name="button" class="web-btn">Veiw website</button>
+        </div>
+
+        <div id="lap-pro">
+          <img src="imgs/pro1.jpg" class="pro1-lap" alt="">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="six-sec">
+      <div id="scroll-fit-slides" class="">
+        <img src="imgs/1688.png" alt="">
+      </div>
+    </section>
+    <section class="seven-sec">
+      <img id="todo-list-img" src="imgs/todo-list.png" alt="">
+      <div id="pro-2-content">
+        <h3>todo-list</h3>
+        <p>its a todo-list project that help you to write your tasks to reminder you
+          to do it with cool style.with this simple project i learned too much things by using vanilla JavaScript
+        </p>
+        <span>experince</span>
+        <div id="todo-studies">
+          <ul>
+            <li>how to use localStorage to store your data or your tasks.</li>
+            <li>how to convert any type of data by JSON.</li>
+            <li>how to control events and values of inputs.</li>
+            <li>how to delete single and all data from localStorage and arrays or objects.</li>
+            <li>how to create search bar or filter bar that help you to find your task.</li>
+            <li>how to show your pervious tasks any time.</li>
+          </ul>
+        </div>
+
+        <span>tools</span>
+        <ul>
+          <li>html</li>
+          <li>css</li>
+          <li>JavaScript</li>
+        </ul>
+        <button type="button" name="button" id="git-todo" class="git-btn">Veiw source code</button>
+        <button type="button" name="button" id="web-todo" class="web-btn">Veiw website</button>
+      </div>
+
+    </section>
+
+    <section class="eight-sec">
+      <h2>services</h2>
+      <div class="all-services">
+
+        <div id="service-one" class="servises">
+          <i class="fa-solid fa-desktop"></i>
+          <h4>web-design</h4>
+          <p>by the studies of UI/UX principles and designs
+            i can help you to provide web-designs with the care of
+            user interactions</p>
+        </div>
+
+        <div id="service-two" class="servises">
+          <i class="fa-solid fa-code"></i>
+          <h4>web-development</h4>
+          <p>by the power of coding and my studies in conseptes
+            of html , css and JavaScript i can build any website applications
+            and convert the ui/ux designs in a pure code </p>
+        </div>
+
+        <div id="service-three" class="servises">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h4>responsive-design</h4>
+          <p>providing a cool responsive design to small,medium and large screens such as laptop , mobile and tablet
+            by the power of css media-query and bootstrap framework.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="ninth-sec">
+      <div class="contact-me-txt">
+        <h2>contact me</h2>
+      </div>
+      <div class="style-contmap">
+
+
+        <div class="contact-form">
+          <form class="form-get" id="form-option" method="post">
+            <input id="form-firstname" type="text" name="" value="" placeholder="First name">
+            <input id="form-lastname" type="text" name="" value="" placeholder="Last name">
+            <input id="form-number" type="text" name="" value="" placeholder="Number">
+            <input id="form-email" type="text" name="" value="" placeholder="Email"><br>
+            <textarea id="form-message" name="name" rows="8" cols="40"></textarea><br>
+            <button type="submit" name="button" id="sub-btn">submit</button>
+          </form>
+        </div>
+        <div class="contact-info">
+
+        </div>
+        <div id="map">
+
+        </div>
+
+      </div>
+      <div class="info-me">
+        <h3 id="footer-txt">get in touch</h3>
+        <div id="all-links">
+
+
+          <p id="face-link">
+            <i class="fa-brands fa-facebook"></i>
+            https://www.facebook.com/Ahmedosama66/
+          </p>
+          <p id="git-link">
+            <i class="fa-brands fa-github"></i>
+            https://github.com/Ahmed-Osama-Salem
+          </p>
+          <p id="whats-link">
+            <i class="fa-brands fa-whatsapp"></i>
+            01112892009
+          </p>
+
+          <p id="gmail-link">
+            <i class="fa-solid fa-envelope"></i>
+            ahmedosamaweb@gmail.com
+          </p>
+        </div>
+      </div>
+
+
+    </section>
+  </div>
+
+
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
