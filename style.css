@@ -1331,17 +1331,17 @@ textarea {
   .my-img::before {
     content: "";
     position: absolute;
-    inset: -10px 91px;
+    inset: 131px -5px;
     background: linear-gradient(315deg, #00ccff, #d400d4, #D50707, #F6E825);
     transition: 0.5s;
     animation: colorrot 4s infinite linear;
-    filter: blur(20px);
+    filter: blur(15px);
 }
 
 .my-img::after {
     content: "";
     position: absolute;
-    inset: 5px;
+    inset: 17px;
     background: #171212;
     border-radius: 50%;
     -webkit-border-radius: 50%;
