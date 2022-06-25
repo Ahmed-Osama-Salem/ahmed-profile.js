@@ -1255,6 +1255,10 @@ textarea {
   display: block;
 }
 
+#whats-link i{
+  display: block;
+}
+
 .show-links {
   opacity: 1;
   filter: blur(0);
@@ -1888,6 +1892,9 @@ textarea {
       display: inline;
   }
 
+#whats-link i{
+  display: inline;
+}
   .info-me h3 {
     font-size: 3rem;
     font-family: 'Righteous', cursive;
@@ -1928,7 +1935,7 @@ textarea {
   -ms-border-radius: 50%;
 }
 #app{
-  width: 100%;
+  width: 100vw;
   background: #171212;
 }
 }
