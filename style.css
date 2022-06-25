@@ -1769,6 +1769,7 @@ textarea {
   .eight-sec h2 {
     font-size: 4rem;
     text-transform: uppercase;
+    padding: 2%;
   }
 
   .all-services {
