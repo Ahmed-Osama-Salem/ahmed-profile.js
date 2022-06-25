@@ -352,26 +352,12 @@ function submitter(e) {
       message: myMessage.value
     };
     console.log(inputData);
-    sendMyData(inputData.firstName, inputData.lastname, inputData.email, inputData.number, inputData.message);
+    alert("message is sent");
     myForm.reset();
   }
 };
 
-//send-Email
-function sendMyData(firstname, lastname, email, number, message) {
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "ahmedosamaweb@gmail.com",
-    Password: "ahmedfrontend97",
-    To: 'a7mmedcena@gmail.com',
-    From: email.value,
-    Subject: `${firstname}sent you an Email`,
-    Body: `first name: ${firstname} <br> last name: ${lastname} <br> number: ${number} <br>
-            email: ${email} <br> message: ${message} `
-  }).then(
-    message => alert("message is sent")
-  );
-};
+
 
 //dark & light-mode toggler
 let modeBtn = document.getElementById("modes-btn");
@@ -379,7 +365,20 @@ modeBtn.addEventListener("click", changeMode);
 
 function changeMode() {
 
+};
+
+
+AOS.init({
+disable: function() {
+  var maxWidth = 800;
+  return window.innerWidth > maxWidth;
 }
+});
+
+
+
+
+
 
 //onTouchMove-mobileScreen-scrollY
 /*document.body.ontouchstart = function(e){
