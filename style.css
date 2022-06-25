@@ -1411,7 +1411,7 @@ textarea {
 
   .my-img2 {
     width: 700px;
-    height: 60%;
+    height: 63%;
     position: relative;
     background: #171212;
     margin: 10% auto;
@@ -1421,7 +1421,7 @@ textarea {
     border-radius: 12px;
     overflow: hidden;
     box-sizing: border-box;
-    padding: 1%;
+    padding: 4%;
     box-shadow: 0 0 10px black;
   }
 
@@ -1784,7 +1784,7 @@ textarea {
   .servises {
     background: #251d1d;
     width: 60%;
-    height: 30%;
+    height: auto;
     border-radius: 40px;
     box-sizing: border-box;
     padding: 10px 7px;
@@ -1815,7 +1815,7 @@ textarea {
 
   .style-contmap {
     width: 100%;
-    height: 65%;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -1874,7 +1874,7 @@ textarea {
   }
 
   #map {
-    width: 80%;
+    width: 85%;
     height: 30%;
     border-radius: 7px;
     margin: auto;
@@ -1895,6 +1895,14 @@ textarea {
 #whats-link i{
   display: inline;
 }
+
+.info-me {
+    width: 100%;
+    height: 26%;
+    background: linear-gradient(to top, #251d1d, #171212, transparent);
+    box-sizing: border-box;
+  }
+
   .info-me h3 {
     font-size: 3rem;
     font-family: 'Righteous', cursive;
@@ -1908,7 +1916,7 @@ textarea {
 .info-me p {
     font-size: 2.5rem;
     font-family: 'Play', sans-serif;
-    padding: 2%;
+    padding: 3%;
     margin: 0 auto;
     cursor: pointer;
 }
