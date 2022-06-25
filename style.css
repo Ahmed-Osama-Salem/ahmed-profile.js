@@ -1407,7 +1407,7 @@ textarea {
 
   .my-img2 {
     width: 700px;
-    height: 930px;
+    height: 60%;
     position: relative;
     background: #171212;
     margin: 10% auto;
@@ -1422,7 +1422,7 @@ textarea {
   }
 
   .my-img2 p {
-    font-size: 2.1rem;
+    font-size: 2.4rem;
   }
 
   /***** media-query-thirdsection ******/
@@ -1927,5 +1927,8 @@ textarea {
   -webkit-border-radius: 50%;
   -ms-border-radius: 50%;
 }
-
+#app{
+  width: 100%;
+  background: #171212;
+}
 }
