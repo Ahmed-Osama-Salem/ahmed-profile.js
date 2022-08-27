@@ -1050,6 +1050,130 @@ nav ul li a:hover::after {
   transition: 0.3s ease-in-out;
 }
 
+.maktabty-sec {
+  width: 100%;
+  height: 100%;
+}
+
+.flex-maktabty {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.maktbtypro {
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+  filter: drop-shadow(2px 4px 6px black);
+  margin-right: 20px;
+}
+
+.text-sec {
+  width: 100%;
+  margin: 20px 30px;
+}
+
+.text-sec h3 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+  position: relative;
+  color: #ffffff;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.text-sec h3::after {
+  content: "";
+  height: 5px;
+  width: 80%;
+  position: absolute;
+  background: #d50707;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+  animation: dash-red3 2s linear;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.text-sec p {
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  font-family: "Play", sans-serif;
+  padding: 5px 0;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.text-sec span {
+  background: #251d1d;
+  border-radius: 3px;
+  font-family: "Righteous", cursive;
+  letter-spacing: 1px;
+  padding: 5px 6px;
+  text-transform: uppercase;
+  color: #d50707;
+  margin: 15px 0;
+}
+
+.text-sec ul {
+  padding: 10px 10px;
+}
+
+.text-sec li {
+  list-style-type: none;
+  font-family: "Righteous", cursive;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 3px 0;
+  line-height: 1.5;
+}
+
+.ex {
+  background: #251d1d;
+  margin: 20px 0;
+  border-radius: 3px;
+  padding-top: 5px;
+  filter: drop-shadow(0 1px 1px #251d1d);
+}
+
+.flex-tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@keyframes dash-red3 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+.flex-book {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.e-books {
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+  filter: drop-shadow(2px 4px 6px black);
+  margin-left: 20px;
+}
 /***** eight-section-servises ******/
 .eight-sec {
   height: 100vh;
@@ -1837,7 +1961,7 @@ textarea {
 
   .servises {
     background: #251d1d;
-    width: 60%;
+    width: 75%;
     height: auto;
     border-radius: 40px;
     box-sizing: border-box;
@@ -1848,14 +1972,15 @@ textarea {
   }
 
   .servises h4 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 10px auto;
     color: #d50707;
   }
 
   .servises p {
-    font-size: 2.5rem;
-    padding: 15px;
+    font-size: 3rem;
+    padding: 32px;
+    text-align: justify;
   }
 
   .servises i {
@@ -2034,5 +2159,98 @@ textarea {
 
   .flex-links {
     margin-top: 100px;
+  }
+
+  .flex-maktabty {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .text-sec h3 {
+    text-align: center;
+    font-size: 4rem;
+    width: 100%;
+  }
+
+  .text-sec {
+    text-align: center;
+    width: 80%;
+    margin: 100px;
+  }
+
+  .text-sec p {
+    font-size: 3rem;
+    margin: 25px auto;
+  }
+
+  .text-sec span {
+    margin: 50px auto;
+    font-size: 3rem;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  .text-sec li {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .flex-tools {
+    flex-wrap: wrap;
+  }
+
+  .maktbtypro {
+    width: 100%;
+    height: auto;
+    margin: 49px auto;
+  }
+
+  .ex {
+    margin: 25px auto;
+  }
+
+  .text-sec h3::after {
+    content: "";
+    height: 10px;
+    width: 80%;
+    position: absolute;
+    background: #d50707;
+    bottom: 0;
+    left: 60px;
+    transition: 0.5s;
+    animation: dash-red4 2s linear;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+  @keyframes dash-red4 {
+    from {
+      width: 0%;
+    }
+
+    to {
+      width: 88%;
+    }
+  }
+
+  .flex-book {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .image-maktabty {
+    text-align: center;
+  }
+
+  .e-books {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
   }
 }
