@@ -1,8 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  color: #F9EBC8;
+  color: #f9ebc8;
   scroll-behavior: smooth;
+}
+
+#app {
+  background: #171212;
+  transition: 1s ease-in-out;
+  width: 100%;
 }
 
 /***** navbar-styles ******/
@@ -30,7 +36,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   font-size: 2rem;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   letter-spacing: 2px;
   text-transform: uppercase;
   position: relative;
@@ -42,7 +48,7 @@ nav ul li a::after {
   height: 3px;
   width: 0%;
   position: absolute;
-  background: #D50707;
+  background: #d50707;
   bottom: 0;
   left: 0;
   transition: 0.5s;
@@ -92,7 +98,7 @@ nav ul li a:hover::after {
   }
 }
 
-.light-mode{
+#modes-btn {
   width: 100px;
   height: 30px;
   position: absolute;
@@ -100,6 +106,10 @@ nav ul li a:hover::after {
   color: black;
   cursor: pointer;
   display: none;
+}
+
+.light-mode {
+  background: red;
 }
 
 .logo1 {
@@ -116,7 +126,7 @@ nav ul li a:hover::after {
 .first-sec {
   width: 100%;
   height: 100vh;
-  background-color: #171212;
+
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -125,7 +135,7 @@ nav ul li a:hover::after {
 }
 
 .first-sec h1 {
-  font-family: 'Fascinate', cursive;
+  font-family: "Fascinate", cursive;
   font-size: 3rem;
   letter-spacing: 1px;
   font-weight: 600;
@@ -155,7 +165,7 @@ nav ul li a:hover::after {
 }
 
 .first-sec .sp-1 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 200;
   font-size: 0.75em;
   color: #3f3838;
@@ -196,11 +206,10 @@ nav ul li a:hover::after {
   content: "";
   position: absolute;
   inset: -3px 50px;
-  background: linear-gradient(315deg, #00ccff, #d400d4, #D50707, #F6E825);
+  background: linear-gradient(315deg, #00ccff, #d400d4, #d50707, #f6e825);
   transition: 0.5s;
   animation: colorrot 4s infinite linear;
   filter: blur(20px);
-
 }
 
 .my-img:hover::before {
@@ -264,7 +273,7 @@ nav ul li a:hover::after {
 }
 
 .border h2 {
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   font-weight: 600;
   font-size: 1.5rem;
   letter-spacing: 2px;
@@ -284,7 +293,7 @@ nav ul li a:hover::after {
   padding: 5px 5px;
   background: #251d1d;
   border-radius: 4px;
-  box-shadow: inset 0 0 0 0 #D50707;
+  box-shadow: inset 0 0 0 0 #d50707;
   transition: ease-out 0.3s;
   outline: none;
   cursor: pointer;
@@ -296,29 +305,53 @@ nav ul li a:hover::after {
   letter-spacing: 1px;
   text-decoration: none;
   color: #fff;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   outline: none;
   transition: ease-out 0.3s;
 }
 
 .btn-contact:hover {
-  box-shadow: inset 130px 0 0 0 #D50707;
+  box-shadow: inset 130px 0 0 0 #d50707;
 }
 
 .btn-contact:hover a {
   letter-spacing: 2px;
 }
 
+.flex-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+
+.link-size {
+  font-size: 2.5rem;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px black);
+}
+
+.i-link {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.i-link:hover {
+  transform: scale(1.2);
+  color: #d50707;
+}
 /***** seccond-section-about ******/
 .second-sec {
   width: 100%;
   height: 100vh;
-  background-color: #171212;
+
   box-sizing: border-box;
 }
 
 .second-sec h2 {
-  font-family: 'Fascinate', cursive;
+  font-family: "Fascinate", cursive;
   font-size: 2rem;
   letter-spacing: 1px;
   font-weight: 400;
@@ -340,7 +373,7 @@ nav ul li a:hover::after {
 }
 
 .second-sec .sp-2 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 200;
   font-size: 0.6em;
   color: #3f3838;
@@ -378,7 +411,7 @@ nav ul li a:hover::after {
   content: "";
   position: absolute;
   inset: -260px 300px;
-  background: linear-gradient(#00ccff, #d400d4, #D50707, #F6E825);
+  background: linear-gradient(#00ccff, #d400d4, #d50707, #f6e825);
   animation: colorrot2 linear infinite 5s;
   filter: blur(50px);
 }
@@ -413,7 +446,7 @@ nav ul li a:hover::after {
   box-sizing: border-box;
   line-height: 1.5;
   letter-spacing: 1px;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   z-index: 10;
 }
 
@@ -422,16 +455,16 @@ nav ul li a:hover::after {
 }
 
 .my-img2 span:last-child {
-  color: #D50707;
+  color: #d50707;
 }
 
 .my-img2 span:nth-child(2) {
-  color: #F6E825;
+  color: #f6e825;
 }
 
 .second-sec .sp-3 {
   margin-left: 25%;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 200;
   font-size: 2em;
   color: #3f3838;
@@ -441,12 +474,12 @@ nav ul li a:hover::after {
 .third-sec {
   height: auto;
   width: 100%;
-  background-color: #171212;
+
   box-sizing: border-box;
 }
 
 .third-sec h2 {
-  font-family: 'Fascinate', cursive;
+  font-family: "Fascinate", cursive;
   font-size: 2rem;
   letter-spacing: 1px;
   font-weight: 400;
@@ -454,7 +487,7 @@ nav ul li a:hover::after {
 }
 
 .third-sec .sp-2 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 200;
   font-size: 0.6em;
   color: #3f3838;
@@ -476,7 +509,7 @@ nav ul li a:hover::after {
 
 .skill-name {
   font-size: 1.2rem;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   margin: 30px 0;
   text-transform: uppercase;
 }
@@ -489,7 +522,7 @@ nav ul li a:hover::after {
 
 .skill-progress {
   height: 15px;
-  background: #D50707;
+  background: #d50707;
   border-radius: 3px;
   position: relative;
   color: #251d1d;
@@ -513,7 +546,7 @@ nav ul li a:hover::after {
   }
 
   to {
-    width: 100%
+    width: 100%;
   }
 }
 
@@ -562,7 +595,7 @@ nav ul li a:hover::after {
 .forth-sec {
   height: 100vh;
   width: 100%;
-  background-color: #171212;
+
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
@@ -589,7 +622,7 @@ nav ul li a:hover::after {
   top: 50%;
   text-align: center;
   font-size: 2.5rem;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: 0.5s ease-in-out;
@@ -687,18 +720,17 @@ nav ul li a:hover::after {
   bottom: 0;
   height: 100px;
   width: 100%;
-  background: linear-gradient(to top, #171212, transparent)
+  background: linear-gradient(to top, #171212, transparent);
 }
 
 /***** fivth-section-projects ******/
 .fivth-sec {
   width: 100%;
   height: 100vh;
-  background-color: #171212;
 }
 
 .fivth-sec h2 {
-  font-family: 'Fascinate', cursive;
+  font-family: "Fascinate", cursive;
   font-size: 2rem;
   letter-spacing: 1px;
   font-weight: 400;
@@ -706,7 +738,7 @@ nav ul li a:hover::after {
 }
 
 .fivth-sec .sp-2 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 200;
   font-size: 0.6em;
   color: #3f3838;
@@ -715,7 +747,7 @@ nav ul li a:hover::after {
 .container-page {
   width: 100%;
   height: 100%;
-  background-color: #171212;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -749,7 +781,7 @@ nav ul li a:hover::after {
   font-size: 2rem;
   letter-spacing: 1px;
   font-weight: 400;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   text-transform: uppercase;
   position: relative;
   color: #ffffff;
@@ -760,7 +792,7 @@ nav ul li a:hover::after {
   height: 5px;
   width: 50%;
   position: absolute;
-  background: #D50707;
+  background: #d50707;
   bottom: 0;
   left: 0;
   transition: 0.5s;
@@ -784,7 +816,7 @@ nav ul li a:hover::after {
 #pro-1-content p {
   line-height: 1.5;
   letter-spacing: 1px;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   padding: 8px 0;
   margin-bottom: 4px;
 }
@@ -792,11 +824,11 @@ nav ul li a:hover::after {
 #pro-1-content span {
   background: #251d1d;
   border-radius: 3px;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   letter-spacing: 1px;
   padding: 5px 6px;
   text-transform: uppercase;
-  color: #D50707;
+  color: #d50707;
 }
 
 #pro-1-content ul {
@@ -805,7 +837,7 @@ nav ul li a:hover::after {
 
 #pro-1-content li {
   list-style-type: none;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 5px 0;
@@ -829,12 +861,12 @@ nav ul li a:hover::after {
   padding: 5px 5px;
   background: #251d1d;
   border-radius: 4px;
-  box-shadow: inset 0 0 0 0 #D50707;
+  box-shadow: inset 0 0 0 0 #d50707;
   transition: ease-in-out 0.4s;
   outline: none;
   cursor: pointer;
   border-style: none;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   letter-spacing: 1px;
   color: #ffffff;
 }
@@ -843,14 +875,14 @@ nav ul li a:hover::after {
   width: 120px;
   height: 40px;
   padding: 5px 5px;
-  background: #D50707;
+  background: #d50707;
   border-radius: 4px;
   box-shadow: inset 0 0 0 0 #251d1d;
   transition: ease-in-out 0.3s;
   outline: none;
   cursor: pointer;
   border-style: none;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   letter-spacing: 1px;
   color: #ffffff;
 }
@@ -863,7 +895,7 @@ nav ul li a:hover::after {
 .six-sec {
   height: 100vh;
   width: 100%;
-  background: #171212;
+
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -892,7 +924,7 @@ nav ul li a:hover::after {
 .seven-sec {
   width: 100%;
   height: 100vh;
-  background: #171212;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -917,7 +949,7 @@ nav ul li a:hover::after {
   font-size: 2rem;
   letter-spacing: 1px;
   font-weight: 400;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   text-transform: uppercase;
   position: relative;
   color: #ffffff;
@@ -928,7 +960,7 @@ nav ul li a:hover::after {
   height: 5px;
   width: 50%;
   position: absolute;
-  background: #D50707;
+  background: #d50707;
   bottom: 0;
   left: 0;
   transition: 0.5s;
@@ -952,7 +984,7 @@ nav ul li a:hover::after {
 #pro-2-content p {
   line-height: 1.5;
   letter-spacing: 1.5px;
-  font-family: 'Play', sans-serif;
+  font-family: "Play", sans-serif;
   padding: 5px 0;
   margin-bottom: 2px;
   font-weight: bold;
@@ -961,11 +993,11 @@ nav ul li a:hover::after {
 #pro-2-content span {
   background: #251d1d;
   border-radius: 3px;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   letter-spacing: 1px;
   padding: 5px 6px;
   text-transform: uppercase;
-  color: #D50707;
+  color: #d50707;
 }
 
 #pro-2-content ul {
@@ -974,7 +1006,7 @@ nav ul li a:hover::after {
 
 #pro-2-content li {
   list-style-type: none;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 3px 0;
@@ -1022,12 +1054,12 @@ nav ul li a:hover::after {
 .eight-sec {
   height: 100vh;
   width: 100%;
-  background: #171212;
+
   box-sizing: border-box;
 }
 
 .eight-sec h2 {
-  font-family: 'Fascinate', cursive;
+  font-family: "Fascinate", cursive;
   font-size: 2rem;
   letter-spacing: 1px;
   font-weight: 400;
@@ -1054,7 +1086,7 @@ nav ul li a:hover::after {
 }
 
 .servises:hover {
-  filter: drop-shadow(0 0 2px #F9F9F9);
+  filter: drop-shadow(0 0 2px #f9f9f9);
   transform: scale(1.1);
 }
 
@@ -1065,16 +1097,16 @@ nav ul li a:hover::after {
 
 .servises h4 {
   font-size: 1.5rem;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   font-weight: 200;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 5px auto;
-  color: #D50707;
+  color: #d50707;
 }
 
 .servises p {
-  font-family: 'Play', sans-serif;
+  font-family: "Play", sans-serif;
   letter-spacing: 1px;
   line-height: 1.2;
 }
@@ -1117,7 +1149,6 @@ nav ul li a:hover::after {
 .ninth-sec {
   height: 100vh;
   width: 100%;
-  background: #171212;
 }
 
 .contact-me-txt {
@@ -1125,7 +1156,7 @@ nav ul li a:hover::after {
 }
 
 .contact-me-txt h2 {
-  font-family: 'Fascinate', cursive;
+  font-family: "Fascinate", cursive;
   font-size: 2rem;
   letter-spacing: 1px;
   font-weight: 400;
@@ -1152,7 +1183,7 @@ nav ul li a:hover::after {
 .contact-form input {
   width: 44%;
   height: 50px;
-  color: #D50707;
+  color: #d50707;
   padding: 1%;
   margin: 2% 1%;
   background: #251d1d;
@@ -1160,7 +1191,7 @@ nav ul li a:hover::after {
   outline-style: none;
   border-radius: 3px;
   box-sizing: border-box;
-  font-family: 'Play', sans-serif;
+  font-family: "Play", sans-serif;
   letter-spacing: 1px;
   font-size: 16px;
   transition: 1s ease-in-out all;
@@ -1180,9 +1211,9 @@ textarea {
   outline-style: hidden;
   border-radius: 4px;
   box-sizing: border-box;
-  font-family: 'Play', sans-serif;
+  font-family: "Play", sans-serif;
   letter-spacing: 1px;
-  color: #D50707;
+  color: #d50707;
   margin: 2% 1% 1%;
   font-size: 15px;
 }
@@ -1191,14 +1222,14 @@ textarea {
   width: 120px;
   height: 40px;
   padding: 5px 5px;
-  background: #D50707;
+  background: #d50707;
   border-radius: 4px;
   box-shadow: inset 0 0 0 0 #251d1d;
   transition: ease-in-out 0.3s;
   outline: none;
   cursor: pointer;
   border-style: none;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   letter-spacing: 1px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -1218,12 +1249,12 @@ textarea {
 
 .info-me h3 {
   font-size: 1.5rem;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   font-weight: 200;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-left: 2%;
-  color: #D50707;
+  color: #d50707;
 }
 
 #all-links {
@@ -1238,24 +1269,24 @@ textarea {
 
 .info-me p {
   font-size: 1rem;
-  font-family: 'Play', sans-serif;
+  font-family: "Play", sans-serif;
   padding: 0.4%;
   margin-left: 1%;
   cursor: pointer;
 }
 
 .info-me i {
-  color: #D50707;
+  color: #d50707;
   margin-right: 1%;
   cursor: pointer;
-  font-size: 1.5rem
+  font-size: 1.5rem;
 }
 
 #git-link i {
   display: block;
 }
 
-#whats-link i{
+#whats-link i {
   display: block;
 }
 
@@ -1285,16 +1316,15 @@ textarea {
 }
 
 .popTxt {
-  color: #D50707;
+  color: #d50707;
   font-size: 1.1rem;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 /***** media-query-sections ******/
-@media only screen and (max-device-width:600px) {
-
+@media only screen and (max-device-width: 600px) {
   /***** media-query-firstsection ******/
   .first-sec {
     width: 100%;
@@ -1320,30 +1350,29 @@ textarea {
     transition: 0.5s ease-in-out;
     opacity: 1;
   }
-@keyframes imgone {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-}
-100% {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-}
+  @keyframes imgone {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
   .my-img::before {
     content: "";
     position: absolute;
     inset: 131px -5px;
-    background: linear-gradient(315deg, #00ccff, #d400d4, #D50707, #F6E825);
+    background: linear-gradient(315deg, #00ccff, #d400d4, #d50707, #f6e825);
     transition: 0.5s;
     animation: colorrot 4s infinite linear;
     filter: blur(15px);
     display: none;
-}
+  }
 
-.my-img::after {
+  .my-img::after {
     content: "";
     position: absolute;
     inset: 17px;
@@ -1352,7 +1381,7 @@ textarea {
     -webkit-border-radius: 50%;
     -ms-border-radius: 50%;
     z-index: 1;
-}
+  }
 
   .border h2 {
     font-size: 3rem;
@@ -1405,13 +1434,17 @@ textarea {
   }
 
   /***** media-query-secondsection ******/
+  .second-sec {
+    width: 100vw;
+    height: auto;
+  }
   .second-sec h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .my-img2 {
-    width: 700px;
-    height: 63%;
+    width: 800px;
+    height: 1800px;
     position: relative;
     background: #171212;
     margin: 10% auto;
@@ -1426,16 +1459,16 @@ textarea {
   }
 
   .my-img2 p {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 
   /***** media-query-thirdsection ******/
   .third-sec {
-    height: 100vh;
+    height: 100%;
   }
 
   .third-sec h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .container-skills {
@@ -1444,12 +1477,13 @@ textarea {
 
   .skills-box {
     width: 100%;
-    max-width: 630px;
+    max-width: 700px;
     padding: 50px 20px;
   }
 
   .skill-name {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
   }
 
   .skill-bar {
@@ -1467,8 +1501,8 @@ textarea {
     padding: 4px 6px;
     background: #f1f1f1;
     border-radius: 4px;
-    font-size: 1.5rem;
-    top: -55px;
+    font-size: 2rem;
+    top: -63px;
     right: 0;
     transform: translate(50%);
   }
@@ -1495,7 +1529,7 @@ textarea {
     }
 
     to {
-      width: 100%
+      width: 100%;
     }
   }
 
@@ -1576,12 +1610,17 @@ textarea {
     width: 80%;
     left: 15%;
     top: 50%;
-    font-size: 4.5rem
+    font-size: 4.5rem;
   }
 
   /***** media-query-fivesection ******/
   .fivth-sec h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
+  }
+
+  .fivth-sec {
+    width: 100vw;
+    height: 100%;
   }
 
   .container-page {
@@ -1601,53 +1640,56 @@ textarea {
   }
 
   #pro-1-content h3 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     letter-spacing: 8px;
     position: relative;
+    font-weight: bold;
   }
 
   #pro-1-content h3::after {
     height: 10px;
-    width: 60%;
+    width: 93%;
     position: absolute;
-    background: #D50707;
+    background: #d50707;
     bottom: 0;
-    left: 25%;
+    left: 23%;
   }
 
   #pro-1-content p {
-    padding: 12px 60px;
-    margin-bottom: 4px;
-    font-size: 2rem;
+    padding: 30px 45px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    text-align: justify;
   }
 
   #pro-1-content span {
-    font-size: 1.6rem;
+    font-size: 3rem;
+    filter: drop-shadow(2px 4px 6px black);
   }
 
   #pro-1-content li {
-    margin: 12px 0;
-    font-size: 1.5rem;
+    margin: 30px 0;
+    font-size: 2.5rem;
   }
 
   .git-btn {
-    width: 300px;
-    height: 60px;
+    width: 435px;
+    height: 100px;
     padding: 5px 5px;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-right: 30px;
   }
 
   .web-btn {
-    width: 220px;
-    height: 60px;
+    width: 300px;
+    height: 80px;
     padding: 5px 5px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     box-shadow: inset 0 0 0 0 #251d1d;
   }
 
   .web-btn:hover {
-    box-shadow: inset 220px 0 0 0 #251d1d;
+    box-shadow: inset 300px 0 0 0 #251d1d;
   }
 
   #lap-pro {
@@ -1670,8 +1712,8 @@ textarea {
 
   /***** media-query-sevensection ******/
   .seven-sec {
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 100%;
     background: #171212;
     display: flex;
     justify-content: flex-end;
@@ -1701,27 +1743,32 @@ textarea {
   }
 
   #pro-2-content h3 {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    letter-spacing: 2px;
     position: relative;
   }
 
   #pro-2-content p {
-    padding: 5px 50px;
+    padding: 5px 8px;
     margin: 25px 0;
-    font-size: 2rem;
+    text-align: justify;
+    font-size: 3rem;
   }
 
   #pro-2-content span {
-    font-size: 2.5rem;
+    margin: 15px auto;
+    font-size: 3rem;
+    filter: drop-shadow(2px 4px 6px black);
   }
 
   #todo-studies {
-    margin: 25px 0;
+    margin: 60px 0;
     padding: 10px;
+    text-align: left;
   }
 
   #todo-studies li {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: normal;
     list-style: inside;
     box-sizing: border-box;
@@ -1729,7 +1776,8 @@ textarea {
 
   #pro-2-content li {
     margin: 20px 0;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 1.5;
   }
 
   .seven-sec #todo-list-img {
@@ -1741,11 +1789,11 @@ textarea {
   #pro-2-content h3::after {
     content: "";
     height: 10px;
-    width: 70%;
+    width: 75%;
     position: absolute;
-    background: #D50707;
+    background: #d50707;
     bottom: 0;
-    left: 30%;
+    left: 28%;
     transition: 0.5s;
     animation: dash-red2 2s linear;
     animation-fill-mode: forwards;
@@ -1764,12 +1812,17 @@ textarea {
     }
   }
 
-
   /***** media-query-eightsection ******/
+  .eight-sec {
+    height: 100%;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 100px 10px;
+  }
   .eight-sec h2 {
     font-size: 4rem;
     text-transform: uppercase;
-    padding: 2%;
+    padding: 50px 10px;
   }
 
   .all-services {
@@ -1789,14 +1842,15 @@ textarea {
     border-radius: 40px;
     box-sizing: border-box;
     padding: 10px 7px;
-    margin: 30px auto;
+    margin: 113px auto;
     transition: 0.5s ease-in-out;
+    filter: drop-shadow(2px 4px 6px black);
   }
 
   .servises h4 {
     font-size: 3rem;
     margin: 10px auto;
-    color: #D50707;
+    color: #d50707;
   }
 
   .servises p {
@@ -1807,16 +1861,27 @@ textarea {
   .servises i {
     font-size: 5rem;
     margin: 10px auto;
-}
+  }
 
   /***** media-query-ninthsection ******/
+  .ninth-sec {
+    height: 100%;
+    width: 100%;
+    margin-top: 150px;
+  }
+
+  .contact-me-txt {
+    width: 100%;
+    margin-top: 50px;
+  }
+
   .contact-me-txt h2 {
     font-size: 4rem;
   }
 
   .style-contmap {
     width: 100%;
-    height: 70%;
+    height: 1500px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -1828,12 +1893,13 @@ textarea {
     width: 100%;
     box-sizing: border-box;
     text-align: center;
+    margin-top: 50px;
   }
 
   .contact-form input {
     width: 45%;
     height: 100px;
-    color: #D50707;
+    color: #d50707;
     padding: 1%;
     margin: 2% 1%;
     background: #251d1d;
@@ -1841,7 +1907,7 @@ textarea {
     outline-style: none;
     border-radius: 3px;
     box-sizing: border-box;
-    font-family: 'Play', sans-serif;
+    font-family: "Play", sans-serif;
     letter-spacing: 1px;
     font-size: 2.5rem;
     transition: 1s ease-in-out all;
@@ -1855,9 +1921,9 @@ textarea {
     outline-style: hidden;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: 'Play', sans-serif;
+    font-family: "Play", sans-serif;
     letter-spacing: 1px;
-    color: #D50707;
+    color: #d50707;
     margin: 2% 0;
     font-size: 1.5rem;
   }
@@ -1890,14 +1956,14 @@ textarea {
   }
 
   #git-link i {
-      display: inline;
+    display: inline;
   }
 
-#whats-link i{
-  display: inline;
-}
+  #whats-link i {
+    display: inline;
+  }
 
-.info-me {
+  .info-me {
     width: 100%;
     height: 26%;
     background: linear-gradient(to top, #251d1d, #171212, transparent);
@@ -1906,45 +1972,67 @@ textarea {
 
   .info-me h3 {
     font-size: 3rem;
-    font-family: 'Righteous', cursive;
+    font-family: "Righteous", cursive;
     font-weight: 200;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-left: 3%;
-    color: #D50707;
-}
+    color: #d50707;
+  }
 
-.info-me p {
+  .info-me p {
     font-size: 2.5rem;
-    font-family: 'Play', sans-serif;
+    font-family: "Play", sans-serif;
     padding: 3%;
     margin: 0 auto;
     cursor: pointer;
-}
+  }
 
-.info-me i {
-    color: #D50707;
+  .info-me i {
+    color: #d50707;
     margin-right: 2%;
     margin-left: 2%;
     cursor: pointer;
     font-size: 2.5rem;
-}
+  }
 
-.second-sec .sp-3 {
-  display: none;
-}
+  .second-sec .sp-3 {
+    display: none;
+  }
 
-.first-sec .sp-1{
-  font-size: 3.5rem;
-}
+  .first-sec .sp-1 {
+    font-size: 3.5rem;
+  }
 
-.border {
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-}
-#app{
-  width: 100vw;
-  background: #171212;
-}
+  .border {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+  }
+  #app {
+    width: 100vw;
+    background: #171212;
+  }
+
+  .link-size {
+    font-size: 4rem;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px black);
+  }
+
+  .i-link {
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  .i-link:hover {
+    transform: scale(1.2);
+    color: #d50707;
+  }
+
+  .flex-links {
+    margin-top: 100px;
+  }
 }
