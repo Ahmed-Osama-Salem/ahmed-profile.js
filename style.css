@@ -1528,9 +1528,6 @@ textarea {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     animation: imgone 2s;
     transition: 0.5s ease-in-out;
     opacity: 1;
@@ -1577,9 +1574,6 @@ textarea {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     z-index: 1;
     box-shadow: none;
   }
