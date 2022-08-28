@@ -1556,6 +1556,10 @@ textarea {
     /* display: none; */
   }
 
+  .my-img:hover::before {
+    inset: 0;
+  }
+
   @keyframes colorrot {
     0% {
       transform: rotate(0deg);
@@ -1599,10 +1603,6 @@ textarea {
 
   .hide-border {
     opacity: 0;
-  }
-
-  .border img {
-    display: none;
   }
 
   .border h2 {
