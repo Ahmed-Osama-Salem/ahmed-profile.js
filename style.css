@@ -1549,25 +1549,10 @@ textarea {
     inset: -26px -33px;
     background: linear-gradient(315deg, #1100ff, #d50707, #f6e825);
     transition: 0.5s;
-    animation: colorrot 4s infinite linear;
     filter: blur(5px);
     box-shadow: none;
     overflow: hidden;
-    /* display: none; */
-  }
-
-  .my-img:hover::before {
-    inset: 0;
-  }
-
-  @keyframes colorrot {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    0% {
-      transform: rotate(360deg);
-    }
+    display: none;
   }
 
   .my-img::after {
