@@ -36,9 +36,10 @@ let faceLink = document.getElementById("face-link");
 let gitLink = document.getElementById("git-link");
 let whatsLink = document.getElementById("whats-link");
 let linksScroll = document.getElementById("all-links");
+let allApp = document.getElementById("app");
 
 //scroll function
-window.onscroll = function() {
+window.onscroll = function () {
   if (scrollY >= 133) {
     aboutScroll.classList.remove("hide");
     aboutScroll.classList.add("scroll-animat");
@@ -184,7 +185,6 @@ window.onscroll = function() {
     linksScroll.classList.add("hide-links");
     linksScroll.classList.remove("show-links");
   }
-
 };
 
 //navbar functions
@@ -202,65 +202,78 @@ function openMenu() {
 
 //images functions
 
-let scene = document.getElementById('scene');
+let scene = document.getElementById("scene");
 let parallaxInstance = new Parallax(scene);
 
 //text functions
 
-var typed5 = new Typed('.sp-1', {
-  strings: ['Iam <i>Ahmed osama salem</i> ', 'Junior <strong>Front-End Developer</strong>'],
+var typed5 = new Typed(".sp-1", {
+  strings: [
+    "Iam <i>Ahmed osama salem</i> ",
+    "Junior <strong>Front-End Developer</strong>",
+  ],
   typeSpeed: 50,
   backSpeed: 50,
-  cursorChar: '_',
+  cursorChar: "_",
   shuffle: true,
   smartBackspace: false,
-  loop: true
+  loop: true,
 });
 
+var textWrapper = document.querySelector(".ml6 .letters");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
 
-var textWrapper = document.querySelector('.ml6 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({
-    loop: true
+anime
+  .timeline({
+    loop: true,
   })
   .add({
-    targets: '.ml6 .letter',
+    targets: ".ml6 .letter",
     translateY: ["1.1em", 0],
     translateZ: 0,
     duration: 750,
-    delay: (el, i) => 50 * i
-  }).add({
-    targets: '.ml6',
+    delay: (el, i) => 50 * i,
+  })
+  .add({
+    targets: ".ml6",
     opacity: 0,
     duration: 1000,
     easing: "easeOutExpo",
-    delay: 1000
+    delay: 1000,
   });
 
 //googleMaps-APis
 if (navigator.geolocation)
-  navigator.geolocation.getCurrentPosition(function(position) {
+  navigator.geolocation.getCurrentPosition(
+    function (position) {
       console.log(position);
       const latitude = position.coords.latitude;
       const longitude = position.coords.longitude;
       console.log(latitude, longitude);
       const myPosition = [latitude, longitude];
-      const map = L.map('map').setView(myPosition, 18);
+      const map = L.map("map").setView(myPosition, 18);
 
-      L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map);
 
-      L.marker(myPosition).addTo(map)
-        .bindPopup(L.popup({
-          className: "popup-style",
-          maxWidth: 700,
-          autoClose: false,
-        }))
-        .openPopup().setPopupContent(`<p class="popTxt">hello,you are here</p>`);
+      L.marker(myPosition)
+        .addTo(map)
+        .bindPopup(
+          L.popup({
+            className: "popup-style",
+            maxWidth: 700,
+            autoClose: false,
+          })
+        )
+        .openPopup()
+        .setPopupContent(`<p class="popTxt">hello,you are here</p>`);
     },
-    function() {
+    function () {
       alert("could not find your position");
     }
   );
@@ -269,46 +282,72 @@ if (navigator.geolocation)
 btnSrcProjectFit.addEventListener("click", btnSrcClick);
 
 function btnSrcClick() {
-  parent.open('https://github.com/Ahmed-Osama-Salem/el-fit-group');
-};
+  parent.open("https://github.com/Ahmed-Osama-Salem/el-fit-group");
+}
 
 btnWebProjectFit.addEventListener("click", btnWebClick);
 
 function btnWebClick() {
-  parent.open('https://ahmed-osama-salem.github.io/el-fit-group/');
-};
+  parent.open("https://ahmed-osama-salem.github.io/el-fit-group/");
+}
 
 //todo-buttons
 let todoGitBtn = document.getElementById("git-todo");
+let todoWebBtn = document.getElementById("web-todo");
 todoGitBtn.addEventListener("click", todoGitClick);
 
 function todoGitClick() {
-  parent.open('https://github.com/Ahmed-Osama-Salem/todo-list');
+  parent.open("https://github.com/Ahmed-Osama-Salem/todo-list");
+}
+
+todoWebBtn.addEventListener("click", () => {
+  parent.open("https://ahmed-osama-salem.github.io/todo-list/");
+});
+
+//maktabty-buttons
+
+let maktabtyGit = document.getElementById("maktabty-git");
+let maktabtyWeb = document.getElementById("maktabty-web");
+maktabtyGit.onclick = () => {
+  parent.open("https://github.com/Ahmed-Osama-Salem/maktabty-app-react");
+};
+maktabtyWeb.onclick = () => {
+  parent.open("https://ahmed-osama-salem.github.io/maktabty-app-react/#/");
 };
 
+//e-books button
 
-
+let ebookGit = document.getElementById("ebook-git");
+let ebookweb = document.getElementById("ebook-web");
+ebookGit.onclick = () => {
+  parent.open("https://github.com/Ahmed-Osama-Salem/E-Books-app");
+};
+ebookweb.onclick = () => {
+  parent.open("https://ahmed-osama-salem.github.io/E-Books-app/#/");
+};
 //contactlinks-functions
 faceLink.addEventListener("click", faceClick);
 
 function faceClick() {
-  parent.open('https://www.facebook.com/Ahmedosama66/');
+  parent.open("https://www.facebook.com/Ahmedosama66/");
   faceLink.style.color = "red";
-};
+}
 
 gitLink.addEventListener("click", gitClick);
 
 function gitClick() {
-  parent.open('https://github.com/Ahmed-Osama-Salem');
+  parent.open("https://github.com/Ahmed-Osama-Salem");
   gitLink.style.color = "red";
-};
+}
 
 whatsLink.addEventListener("click", whatsClick);
 
 function whatsClick() {
-  parent.open('https://api.whatsapp.com/message/6AMIAUAIQUZ3B1?autoload=1&app_absent=0');
+  parent.open(
+    "https://api.whatsapp.com/message/6AMIAUAIQUZ3B1?autoload=1&app_absent=0"
+  );
   whatsLink.style.color = "red";
-};
+}
 
 //form-functions
 let myForm = document.getElementById("form-option");
@@ -322,7 +361,7 @@ myForm.addEventListener("submit", submitter);
 
 function submitter(e) {
   e.preventDefault();
-  let errorMessage = '';
+  let errorMessage = "";
   if (myFirstName.value.length < 5) {
     errorMessage += `firstname should be 5 characters `;
   }
@@ -340,7 +379,7 @@ function submitter(e) {
     div.style.display = "flex";
     div.style.justifyContent = "space-around";
     myForm.append(div);
-    setTimeout(function() {
+    setTimeout(function () {
       div.remove();
     }, 4000);
   } else {
@@ -349,33 +388,22 @@ function submitter(e) {
       lastName: myLastName.value,
       email: myEmail.value,
       number: myNumber.value,
-      message: myMessage.value
+      message: myMessage.value,
     };
     console.log(inputData);
     alert("message is sent");
     myForm.reset();
   }
+}
+
+//scroll on mobile
+
+AOS.init();
+
+//preload for website
+const preLoader = document.getElementById("load");
+window.onload = function () {
+  setTimeout(() => {
+    preLoader.style.display = "none";
+  }, 4000);
 };
-
-
-
-//dark & light-mode toggler
-let modeBtn = document.getElementById("modes-btn");
-modeBtn.addEventListener("click", changeMode);
-
-function changeMode() {
-
-};
-
-
-  AOS.init();
-
-
-
-
-
-//onTouchMove-mobileScreen-scrollY
-/*document.body.ontouchstart = function(e){
-console.log(e);
-
-};*/
