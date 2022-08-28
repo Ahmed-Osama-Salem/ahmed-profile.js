@@ -1545,23 +1545,25 @@ textarea {
   .my-img::before {
     content: "";
     position: absolute;
-    inset: 131px -5px;
-    background: linear-gradient(315deg, #00ccff, #d400d4, #d50707, #f6e825);
+    inset: -72px -332px;
+    background: linear-gradient(315deg, #1100ff, #d50707, #f6e825);
     transition: 0.5s;
     animation: colorrot 4s infinite linear;
-    filter: blur(15px);
+    filter: blur(5px);
+    box-shadow: none;
     /* display: none; */
   }
 
   .my-img::after {
     content: "";
     position: absolute;
-    inset: 17px;
+    inset: 10px;
     background: #171212;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -ms-border-radius: 50%;
     z-index: 1;
+    box-shadow: none;
   }
 
   .border h2 {
