@@ -1526,7 +1526,11 @@ textarea {
     background: #171212;
     overflow: hidden;
     -webkit-border-radius: 50%;
-    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     animation: imgone 2s;
     transition: 0.5s ease-in-out;
     opacity: 1;
@@ -1554,6 +1558,16 @@ textarea {
     /* display: none; */
   }
 
+  @keyframes colorrot {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    0% {
+      transform: rotate(360deg);
+    }
+  }
+
   .my-img::after {
     content: "";
     position: absolute;
@@ -1561,7 +1575,11 @@ textarea {
     background: #171212;
     border-radius: 50%;
     -webkit-border-radius: 50%;
-    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     z-index: 1;
     box-shadow: none;
   }
